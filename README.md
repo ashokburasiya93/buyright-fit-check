@@ -4,8 +4,8 @@ A personal, cited fit check for product pages (concept for Amazon.in). Shoppers 
 
 > All data is synthetic, made up for an AI PM course project. Not affiliated with any retailer.
 
-- **Live app:** _pending deploy_ (no sign-in)
-- **Miro opportunity board:** _pending_. Import `deliverables/2. AI Opportunity Mapping - BuyRight (Miro Import).csv` into Miro to rebuild it.
+- **Live app:** https://buyright-fit-check.vercel.app (no sign-in)
+- **Miro opportunity board:** https://miro.com/app/board/uXjVEQ_4qws=/ (built from `deliverables/2. AI Opportunity Mapping - BuyRight (Miro Import).csv`)
 
 ## Deliverables in this repo
 

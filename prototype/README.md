@@ -4,8 +4,8 @@ A personal, cited fit check for product pages. The shopper answers 2 to 5 quick 
 
 > **All data in this repository is synthetic.** The 18 products, brands, phone models, 173 reviews and reviewer names are made up for an AI PM course project (concept for Amazon.in). It is not affiliated with any retailer. Return and COD figures in the docs come from the project brief.
 
-- **Live app:** _added after deploy_ (no sign-in)
-- **Miro opportunity board:** _see the repo README_ (the board is built from `2. AI Opportunity Mapping - BuyRight (Miro Import).csv`)
+- **Live app:** https://buyright-fit-check.vercel.app (no sign-in)
+- **Miro opportunity board:** https://miro.com/app/board/uXjVEQ_4qws=/
 
 ## What it does
 
