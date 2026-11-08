@@ -1,0 +1,444 @@
+{
+ "_note": "SYNTHETIC catalogue for the BuyRight course prototype. Brands and products are fictional.",
+ "as_of": "2026-11-08",
+ "products": [
+  {
+   "id": "AC01",
+   "category": "ac",
+   "name": "Frostline 0.75 Ton 3 Star Window AC",
+   "brand": "Frostline",
+   "price_inr": 24990,
+   "rating": 3.9,
+   "ratings_count": 1840,
+   "specs": {
+    "type": "window",
+    "capacity_tons": 0.75,
+    "star_rating": 3,
+    "max_ambient_c": 46,
+    "voltage_range_v": [
+     200,
+     240
+    ],
+    "window_opening_cm": {
+     "w": 61,
+     "h": 41
+    },
+    "noise_db": 52,
+    "annual_kwh": 845,
+    "condenser": "copper",
+    "refrigerant": "R32",
+    "warranty_compressor_years": 5
+   }
+  },
+  {
+   "id": "AC02",
+   "category": "ac",
+   "name": "AeroChill 1 Ton 3 Star Inverter Split AC",
+   "brand": "AeroChill",
+   "price_inr": 30490,
+   "rating": 4.1,
+   "ratings_count": 5210,
+   "specs": {
+    "type": "split",
+    "capacity_tons": 1,
+    "star_rating": 3,
+    "max_ambient_c": 52,
+    "voltage_range_v": [
+     145,
+     290
+    ],
+    "noise_db": 38,
+    "annual_kwh": 720,
+    "condenser": "copper",
+    "refrigerant": "R32",
+    "warranty_compressor_years": 10
+   }
+  },
+  {
+   "id": "AC03",
+   "category": "ac",
+   "name": "Kelvo 1 Ton 5 Star Inverter Split AC",
+   "brand": "Kelvo",
+   "price_inr": 35990,
+   "rating": 4.2,
+   "ratings_count": 2675,
+   "specs": {
+    "type": "split",
+    "capacity_tons": 1,
+    "star_rating": 5,
+    "max_ambient_c": 46,
+    "voltage_range_v": [
+     160,
+     260
+    ],
+    "annual_kwh": 610,
+    "condenser": "copper",
+    "refrigerant": "R32",
+    "warranty_compressor_years": 10
+   }
+  },
+  {
+   "id": "AC04",
+   "category": "ac",
+   "name": "Frostline 1.5 Ton 3 Star Inverter Split AC",
+   "brand": "Frostline",
+   "price_inr": 37990,
+   "rating": 4.3,
+   "ratings_count": 9120,
+   "specs": {
+    "type": "split",
+    "capacity_tons": 1.5,
+    "star_rating": 3,
+    "max_ambient_c": 52,
+    "voltage_range_v": [
+     120,
+     290
+    ],
+    "noise_db": 41,
+    "annual_kwh": 1050,
+    "condenser": "copper",
+    "refrigerant": "R32",
+    "warranty_compressor_years": 10
+   }
+  },
+  {
+   "id": "AC05",
+   "category": "ac",
+   "name": "AeroChill 1.5 Ton 5 Star Window AC",
+   "brand": "AeroChill",
+   "price_inr": 33490,
+   "rating": 4,
+   "ratings_count": 1312,
+   "specs": {
+    "type": "window",
+    "capacity_tons": 1.5,
+    "star_rating": 5,
+    "max_ambient_c": 48,
+    "voltage_range_v": [
+     180,
+     260
+    ],
+    "window_opening_cm": {
+     "w": 66,
+     "h": 43
+    },
+    "noise_db": 54,
+    "annual_kwh": 990,
+    "condenser": "copper",
+    "refrigerant": "R32",
+    "warranty_compressor_years": 5
+   }
+  },
+  {
+   "id": "AC06",
+   "category": "ac",
+   "name": "Kelvo 2 Ton 3 Star Inverter Split AC",
+   "brand": "Kelvo",
+   "price_inr": 47990,
+   "rating": 4.2,
+   "ratings_count": 1980,
+   "specs": {
+    "type": "split",
+    "capacity_tons": 2,
+    "star_rating": 3,
+    "max_ambient_c": 52,
+    "voltage_range_v": [
+     145,
+     290
+    ],
+    "noise_db": 44,
+    "annual_kwh": 1390,
+    "condenser": "aluminium",
+    "refrigerant": "R32",
+    "warranty_compressor_years": 10
+   }
+  },
+  {
+   "id": "CH01",
+   "category": "charger",
+   "name": "Voltix 20W USB-C PD Charger",
+   "brand": "Voltix",
+   "price_inr": 1549,
+   "rating": 4.2,
+   "ratings_count": 14200,
+   "specs": {
+    "ports": [
+     {
+      "type": "C",
+      "pd": 20
+     }
+    ],
+    "cable_included": null,
+    "weight_g": 52,
+    "bis_certified": true,
+    "warranty_months": 12
+   }
+  },
+  {
+   "id": "CH02",
+   "category": "charger",
+   "name": "Voltix 25W PPS Super Fast Charger with C-C Cable",
+   "brand": "Voltix",
+   "price_inr": 1799,
+   "rating": 4.3,
+   "ratings_count": 8800,
+   "specs": {
+    "ports": [
+     {
+      "type": "C",
+      "pd": 25,
+      "pps": 25
+     }
+    ],
+    "cable_included": "USB-C to USB-C",
+    "weight_g": 60,
+    "bis_certified": true,
+    "warranty_months": 12
+   }
+  },
+  {
+   "id": "CH03",
+   "category": "charger",
+   "name": "Ampora 45W PPS Fast Charger with 5A Cable",
+   "brand": "Ampora",
+   "price_inr": 2999,
+   "rating": 4.4,
+   "ratings_count": 3150,
+   "specs": {
+    "ports": [
+     {
+      "type": "C",
+      "pd": 45,
+      "pps": 45
+     }
+    ],
+    "cable_included": "USB-C to USB-C",
+    "weight_g": 88,
+    "bis_certified": true,
+    "warranty_months": 18
+   }
+  },
+  {
+   "id": "CH04",
+   "category": "charger",
+   "name": "Ampora 65W GaN Dual Port Charger",
+   "brand": "Ampora",
+   "price_inr": 3999,
+   "rating": 4.5,
+   "ratings_count": 2240,
+   "specs": {
+    "ports": [
+     {
+      "type": "C",
+      "pd": 65,
+      "pps": 33
+     },
+     {
+      "type": "A",
+      "qc": 18
+     }
+    ],
+    "cable_included": "USB-C to USB-C",
+    "weight_g": 110,
+    "bis_certified": true,
+    "warranty_months": 18
+   }
+  },
+  {
+   "id": "CH05",
+   "category": "charger",
+   "name": "Chargo 33W Dual Port USB-A + USB-C Charger",
+   "brand": "Chargo",
+   "price_inr": 1599,
+   "rating": 3.9,
+   "ratings_count": 6400,
+   "specs": {
+    "ports": [
+     {
+      "type": "A",
+      "qc": 27
+     },
+     {
+      "type": "C",
+      "pd": 20
+     }
+    ],
+    "cable_included": "USB-A to USB-C",
+    "weight_g": 70,
+    "bis_certified": true
+   }
+  },
+  {
+   "id": "CH06",
+   "category": "charger",
+   "name": "Chargo 20000mAh 22.5W Power Bank",
+   "brand": "Chargo",
+   "price_inr": 2499,
+   "rating": 4.1,
+   "ratings_count": 11800,
+   "specs": {
+    "ports": [
+     {
+      "type": "C",
+      "pd": 20
+     },
+     {
+      "type": "A",
+      "qc": 22.5
+     }
+    ],
+    "capacity_mah": 20000,
+    "cable_included": "USB-A to USB-C",
+    "weight_g": 420,
+    "bis_certified": true,
+    "warranty_months": 6
+   }
+  },
+  {
+   "id": "SR01",
+   "category": "rack",
+   "name": "Woodcraft 4-Tier Open Shoe Rack",
+   "brand": "Woodcraft",
+   "price_inr": 1899,
+   "rating": 4,
+   "ratings_count": 3900,
+   "specs": {
+    "dimensions_cm": {
+     "w": 60,
+     "d": 30,
+     "h": 80
+    },
+    "capacity_pairs": 12,
+    "shelf_depth_cm": 30,
+    "closed": false,
+    "mounting": "floor",
+    "material": "engineered wood",
+    "max_load_kg": 30,
+    "assembly_minutes": 25,
+    "warranty_months": 12
+   }
+  },
+  {
+   "id": "SR02",
+   "category": "rack",
+   "name": "Steelnest 5-Tier Metal Shoe Rack",
+   "brand": "Steelnest",
+   "price_inr": 2299,
+   "rating": 4.2,
+   "ratings_count": 7300,
+   "specs": {
+    "dimensions_cm": {
+     "w": 90,
+     "d": 28,
+     "h": 95
+    },
+    "capacity_pairs": 20,
+    "shelf_depth_cm": 26,
+    "closed": false,
+    "mounting": "floor",
+    "material": "powder-coated steel",
+    "max_load_kg": 40,
+    "assembly_minutes": 30,
+    "warranty_months": 12
+   }
+  },
+  {
+   "id": "SR03",
+   "category": "rack",
+   "name": "Homerize 3-Door Shoe Cabinet",
+   "brand": "Homerize",
+   "price_inr": 6499,
+   "rating": 4.1,
+   "ratings_count": 1620,
+   "specs": {
+    "dimensions_cm": {
+     "w": 80,
+     "d": 35,
+     "h": 100
+    },
+    "capacity_pairs": 18,
+    "shelf_depth_cm": 33,
+    "closed": true,
+    "mounting": "anchor",
+    "front_clearance_cm": 40,
+    "material": "engineered wood",
+    "max_load_kg": 45,
+    "assembly_minutes": 90,
+    "warranty_months": 24
+   }
+  },
+  {
+   "id": "SR04",
+   "category": "rack",
+   "name": "Slimline Tilt-Out Shoe Cabinet (17 cm deep)",
+   "brand": "Slimline",
+   "price_inr": 5299,
+   "rating": 3.8,
+   "ratings_count": 980,
+   "specs": {
+    "dimensions_cm": {
+     "w": 60,
+     "d": 17,
+     "h": 110
+    },
+    "capacity_pairs": 15,
+    "shelf_depth_cm": 28,
+    "closed": true,
+    "mounting": "anchor",
+    "front_clearance_cm": 30,
+    "material": "engineered wood",
+    "max_load_kg": 25,
+    "assembly_minutes": 75,
+    "warranty_months": 12
+   }
+  },
+  {
+   "id": "SR05",
+   "category": "rack",
+   "name": "Woodcraft Wall-Mounted Shoe Shelf",
+   "brand": "Woodcraft",
+   "price_inr": 2799,
+   "rating": 4,
+   "ratings_count": 640,
+   "specs": {
+    "dimensions_cm": {
+     "w": 75,
+     "d": 25,
+     "h": 60
+    },
+    "capacity_pairs": 9,
+    "shelf_depth_cm": 25,
+    "closed": false,
+    "mounting": "wall",
+    "material": "solid pine",
+    "max_load_kg": 25,
+    "assembly_minutes": 40,
+    "warranty_months": 12
+   }
+  },
+  {
+   "id": "SR06",
+   "category": "rack",
+   "name": "Steelnest Shoe Bench with Seat",
+   "brand": "Steelnest",
+   "price_inr": 3499,
+   "rating": 4.3,
+   "ratings_count": 2100,
+   "specs": {
+    "dimensions_cm": {
+     "w": 100,
+     "d": 33,
+     "h": 50
+    },
+    "capacity_pairs": 9,
+    "shelf_depth_cm": 31,
+    "closed": false,
+    "mounting": "floor",
+    "material": "steel and cushioned seat",
+    "max_load_kg": 120,
+    "assembly_minutes": 35,
+    "warranty_months": 12
+   }
+  }
+ ]
+}

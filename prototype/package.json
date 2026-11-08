@@ -1,0 +1,13 @@
+{
+  "name": "buyright-fit-check",
+  "version": "1.0.0",
+  "private": true,
+  "description": "BuyRight: a cited 'Will this work for me?' check on product pages (synthetic data, course prototype).",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "data": "node scripts/generate_data.js",
+    "test": "node evals/run_rules.js",
+    "evals:live": "node evals/run_live.js",
+    "dev": "node server.js"
+  }
+}

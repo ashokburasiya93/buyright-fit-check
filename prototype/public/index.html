@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuyRight: Will this work for me?</title>
+  <meta name="description" content="A cited, personal fit check on product pages: will this AC cool my room, will this charger fast-charge my phone, will this rack fit my wall. Synthetic data, course prototype.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230f766e'/><path d='M9 16.5l4.5 4.5L23 11' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="logo" aria-hidden="true">✓</span>
+      <div><strong>BuyRight</strong><span class="tag">Will this work for me?</span></div>
+    </div>
+    <div class="badges">
+      <span id="modelBadge" class="badge" title="Models configured on the server">Checking models…</span>
+      <span class="badge muted">Synthetic data · course prototype · not affiliated with any retailer</span>
+    </div>
+  </header>
+
+  <div class="layout">
+    <nav class="side" aria-label="Catalogue">
+      <div class="tabs" role="tablist" id="tabs"></div>
+      <ul id="productList" class="plist"></ul>
+      <p class="fine">18 fictional products and 173 synthetic reviews. Brands, phones and reviewers are made up.</p>
+    </nav>
+
+    <main id="main">
+      <section class="product" id="product"></section>
+
+      <section class="card fit" aria-labelledby="fitTitle">
+        <div class="fit-head">
+          <h2 id="fitTitle">Will this work for me?</h2>
+          <p class="sub">Tell us about your <span id="situationWord">room</span>. We check the listing and owner reviews against it and show our sources.</p>
+        </div>
+        <div class="presets" id="presets"></div>
+        <form id="profileForm" class="pform" autocomplete="off"></form>
+        <div class="actions">
+          <button id="checkBtn" class="primary" type="button">Check it for me</button>
+          <span class="privacy">Your answers stay in this browser. No sign-in.</span>
+        </div>
+        <div id="result" class="result" aria-live="polite"></div>
+      </section>
+
+      <section class="card ask" aria-labelledby="askTitle">
+        <h2 id="askTitle">Ask about your situation</h2>
+        <div class="chips" id="askChips"></div>
+        <div class="askrow">
+          <input id="askInput" type="text" maxlength="400" placeholder="e.g. Will it be noisy in a bedroom?">
+          <button id="askBtn" type="button">Ask</button>
+        </div>
+        <div id="askOut" class="askout" aria-live="polite"></div>
+      </section>
+
+      <section class="card" id="specsCard">
+        <details><summary>Full specifications</summary><table id="specs" class="specs"></table></details>
+        <details><summary id="revSummary">All reviews</summary><div id="allReviews"></div></details>
+      </section>
+    </main>
+  </div>
+  <footer class="foot">BuyRight prototype · verdicts come from written rules, explanations from an AI model that must cite the listing or a review, and every number is fact-checked before you see it.</footer>
+  <script src="app.js"></script>
+</body>
+</html>

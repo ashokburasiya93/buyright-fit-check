@@ -1,0 +1,89 @@
+﻿Frame,Type,Title,Text,Color,Impact,Feasibility,Score,Quadrant
+1 Header,Sticky,Persona,"Neha, accounts executive in Lucknow (tier-2), buying her family's first split AC; also shops for chargers and home storage. Synthetic persona.",yellow,,,,
+1 Header,Sticky,Root cause,"The facts that decide fit (capacity vs room, peak-heat rating, voltage, dimensions, charging standard) exist on the listing and in reviews, but nothing turns them into a personal, cited verdict before she pays.",yellow,,,,
+1 Header,Sticky,Evidence,"Returns 8-15% (electronics) and 10-20% (home); 'not as expected' a top reason; tier-2/3 COD 50-60% of orders, returning 1.8-2.3x prepaid (brief). Synthetic: 5/5 interviewees search reviews for 'someone like me'.",yellow,,,,
+1 Header,Sticky,Goal,"Find where AI genuinely helps a shopper confirm fit before buying, score it, and scope a safe, grounded MVP for the PRD.",yellow,,,,
+2 Workflow,Sticky,S1 Discover & shortlist | Today,"Search, filters, sponsored results, best-seller badges.",gray,,,,
+2 Workflow,Sticky,S1 Discover & shortlist | Pain,"Filters are generic (tonnage, watts) and assume she knows what she needs.",red,,,,
+2 Workflow,Sticky,S1 Discover & shortlist | AI opportunities,"O1, O10",light_green,,,,
+2 Workflow,Sticky,S2 Read the listing | Today,"Bullet points, spec table, A+ images.",gray,,,,
+2 Workflow,Sticky,S2 Read the listing | Pain,"Deal-breakers (ambient rating, voltage range, window size, PPS support, shelf depth) are scattered or missing.",red,,,,
+2 Workflow,Sticky,S2 Read the listing | AI opportunities,"O1, O3, O6",light_green,,,,
+2 Workflow,Sticky,S3 Read reviews & Q&A | Today,Scrolls hundreds of reviews; asks in seller Q&A.,gray,,,,
+2 Workflow,Sticky,S3 Read reviews & Q&A | Pain,Reviews from people in her situation are buried; Q&A answers take 2-3 days and are generic.,red,,,,
+2 Workflow,Sticky,S3 Read reviews & Q&A | AI opportunities,"O2, O4",light_green,,,,
+2 Workflow,Sticky,S4 Decide fit | Today,Does the maths herself or calls a friend or electrician.,gray,,,,
+2 Workflow,Sticky,S4 Decide fit | Pain,"She doesn't know which question to ask (tons per sq ft, PD vs PPS, shoe length vs shelf).",red,,,,
+2 Workflow,Sticky,S4 Decide fit | AI opportunities,"O1, O3, O4, O14",light_green,,,,
+2 Workflow,Sticky,S5 Pay & checkout | Today,Chooses COD when unsure; checks the return policy first.,gray,,,,
+2 Workflow,Sticky,S5 Pay & checkout | Pain,COD as an exit route; carts abandoned for days.,red,,,,
+2 Workflow,Sticky,S5 Pay & checkout | AI opportunities,"O1, O5",light_green,,,,
+2 Workflow,Sticky,S6 Delivery & install | Today,"Installer visit, assembly, wall drilling.",gray,,,,
+2 Workflow,Sticky,S6 Delivery & install | Pain,"Surprises: needs a stabilizer, no outdoor-unit spot, landlord won't allow drilling.",red,,,,
+2 Workflow,Sticky,S6 Delivery & install | AI opportunities,O7,light_green,,,,
+2 Workflow,Sticky,S7 Use & discover mismatch | Today,"First hot afternoon, first charge, first time the cabinet door is closed.",gray,,,,
+2 Workflow,Sticky,S7 Use & discover mismatch | Pain,Room stays warm; phone charges slowly; size-10 shoes don't fit.,red,,,,
+2 Workflow,Sticky,S7 Use & discover mismatch | AI opportunities,O8,light_green,,,,
+2 Workflow,Sticky,S8 Return & refund | Today,"Return pickup, uninstall, refund wait.",gray,,,,
+2 Workflow,Sticky,S8 Return & refund | Pain,Costs her time and trust; costs the retailer 20-65% of the item's value.,red,,,,
+2 Workflow,Sticky,S8 Return & refund | AI opportunities,O8,light_green,,,,
+3 Opportunities,Card,O1 Personal fit check on the product page,Ask 2-5 situation questions; written rules compare them with the listing and return Works / Caveat / Likely won't work / Need info. Why AI: the verdict itself should NOT be AI (it must be exact and explainable); AI is used around it (O2-O4).,blue,5,5,25,Do first (MVP)
+3 Opportunities,Card,O2 'Owners like me' review mining,"Find and summarise the reviews from people in a similar situation (room size, city, phone model, shoe size), with citations. Why AI: reviews are free text in many phrasings; an LLM summarises them well once retrieval narrows the set.",blue,5,4,20,Do first (MVP)
+3 Opportunities,Card,O3 Plain-language cited explanation,"Turn the rule results into a short, friendly explanation that cites each check, spec and review. Why AI: good at plain language; risky with numbers, so every number is fact-checked.",blue,4,5,20,Do first (MVP)
+3 Opportunities,Card,O4 Ask about my situation,"Grounded Q&A over the listing and reviews ('Do I need a stabilizer?'), answering 'the listing doesn't say' when it can't. Why AI: open questions in shoppers' own words.",blue,4,4,16,Do first (MVP)
+3 Opportunities,Card,O5 Fit-safe alternatives,"When it won't work, show same-category products that pass her checks, ranked by rating, never sponsored. Why AI: not needed; deterministic re-run of the rules.",blue,4,4,16,Do first (MVP)
+3 Opportunities,Card,O6 Missing-spec alerts for sellers,"Flag listings that lack fit-deciding specs (e.g., noise, ambient rating) so sellers add them. Why AI: field extraction from messy listings.",blue,3,4,12,Quick add-on
+3 Opportunities,Card,O7 Install-readiness checklist,"Before delivery: stabilizer, outdoor-unit spot, wall drilling, door clearance. Why AI: mostly rules; AI phrases it.",blue,3,4,12,Quick add-on
+3 Opportunities,Card,O8 Learn new fit rules from return reasons,Classify 'not as expected' return comments into fit causes to find the next rule to add. Why AI: text classification at scale. Needs real return data.,blue,4,3,12,Plan next
+3 Opportunities,Card,O9 Measure the room or wall with the phone camera,AR or photo measurement of room size or alcove width. Why AI: computer vision; accuracy and device support are uncertain.,blue,4,2,8,Park / avoid
+3 Opportunities,Card,O10 Saved 'My home' profile,"Remember rooms, devices and spaces so every product page can check fit in one tap. Why AI: not needed; privacy design matters.",blue,3,3,9,Plan next
+3 Opportunities,Card,O11 Is this deal real? (price-trust),Predict whether a discount is genuine. Why AI: different problem from fit; parked.,blue,2,2,4,Park / avoid
+3 Opportunities,Card,O12 AI-filled missing specs,Let the model guess specs the listing lacks. Why AI: would invent facts; unsafe for a buy decision.,blue,2,2,4,Park / avoid
+3 Opportunities,Card,O13 Persuasive sales chatbot,"Upsell and nudge to buy. Why AI: easy to build, but it destroys trust and raises returns.",blue,1,4,4,Park / avoid
+3 Opportunities,Card,O14 Hindi and voice fit check,Ask the fit questions by voice in Hindi or other Indian languages for tier-2/3 shoppers. Why AI: speech and translation; plan after the English MVP is proven.,blue,4,3,12,Plan next
+4 Scoring,Sticky,Scoring rubric,"Impact (1-5): share of mismatch returns it can prevent + how many shoppers hit it + strength of evidence. Feasibility (1-5): data already on the listing and in reviews, can it be grounded and checked, cost per check, risk if wrong. Score = Impact x Feasibility.",yellow,,,,
+5 Impact x Feasibility 2x2,Sticky,O1 Personal fit check on the product page,I5 x F5 = 25,green,5,5,25,Do first (MVP)
+5 Impact x Feasibility 2x2,Sticky,O2 'Owners like me' review mining,I5 x F4 = 20,green,5,4,20,Do first (MVP)
+5 Impact x Feasibility 2x2,Sticky,O3 Plain-language cited explanation,I4 x F5 = 20,green,4,5,20,Do first (MVP)
+5 Impact x Feasibility 2x2,Sticky,O4 Ask about my situation,I4 x F4 = 16,green,4,4,16,Do first (MVP)
+5 Impact x Feasibility 2x2,Sticky,O5 Fit-safe alternatives,I4 x F4 = 16,green,4,4,16,Do first (MVP)
+5 Impact x Feasibility 2x2,Sticky,O6 Missing-spec alerts for sellers,I3 x F4 = 12,light_blue,3,4,12,Quick add-on
+5 Impact x Feasibility 2x2,Sticky,O7 Install-readiness checklist,I3 x F4 = 12,light_blue,3,4,12,Quick add-on
+5 Impact x Feasibility 2x2,Sticky,O8 Learn new fit rules from return reasons,I4 x F3 = 12,yellow,4,3,12,Plan next
+5 Impact x Feasibility 2x2,Sticky,O14 Hindi and voice fit check,I4 x F3 = 12,yellow,4,3,12,Plan next
+5 Impact x Feasibility 2x2,Sticky,O10 Saved 'My home' profile,I3 x F3 = 9,yellow,3,3,9,Plan next
+5 Impact x Feasibility 2x2,Sticky,O9 Measure the room or wall with the phone camera,I4 x F2 = 8,gray,4,2,8,Park / avoid
+5 Impact x Feasibility 2x2,Sticky,O11 Is this deal real? (price-trust),I2 x F2 = 4,gray,2,2,4,Park / avoid
+5 Impact x Feasibility 2x2,Sticky,O12 AI-filled missing specs,I2 x F2 = 4,gray,2,2,4,Park / avoid
+5 Impact x Feasibility 2x2,Sticky,O13 Persuasive sales chatbot,I1 x F4 = 4,gray,1,4,4,Park / avoid
+6 Should / Should NOT,Sticky,Should do,"Ask only for the few facts that decide fit (room size and city, phone model, space and shoe size).",green,,,,
+6 Should / Should NOT,Sticky,Should do,"Decide the verdict with written, testable rules, never with the model.",green,,,,
+6 Should / Should NOT,Sticky,Should do,"Cite every claim to a check, a spec field or a review id.",green,,,,
+6 Should / Should NOT,Sticky,Should do,Say 'Need more info' or 'the listing doesn't say' instead of guessing.,green,,,,
+6 Should / Should NOT,Sticky,Should do,"Summarise reviews from owners in a similar situation, and show the reviews.",green,,,,
+6 Should / Should NOT,Sticky,Should do,"Suggest same-category alternatives that pass, ranked by rating, never sponsored.",green,,,,
+6 Should / Should NOT,Sticky,Should do,Keep the shopper's answers on her device; no sign-in needed.,green,,,,
+6 Should / Should NOT,Sticky,Should NOT do,"Pressure the shopper (no 'buy now', urgency or guarantees).",red,,,,
+6 Should / Should NOT,Sticky,Should NOT do,"Invent specs, numbers or reviews, or fill in missing specs by guessing.",red,,,,
+6 Should / Should NOT,Sticky,Should NOT do,Follow instructions or hype written inside reviews.,red,,,,
+6 Should / Should NOT,Sticky,Should NOT do,"Give wiring, earthing, gas or battery-opening advice (refer to a licensed electrician or the brand).",red,,,,
+6 Should / Should NOT,Sticky,Should NOT do,"Place orders, returns or payments, or advise on COD vs prepaid.",red,,,,
+6 Should / Should NOT,Sticky,Should NOT do,Rank sponsored products or change the verdict for a seller.,red,,,,
+6 Should / Should NOT,Sticky,Should NOT do,Share reviewer personal details.,red,,,,
+7 Feature to AI to Guardrails,Table row,F1 Fit Check verdict + cited explanation,"From: O1, O3 | AI capability: none for the verdict (rules engine); LLM writes the explanation | Inputs: shopper answers, listing specs, check results | Output: verdict, checks, plain-language 'why' with citations | Guardrails: verdict fixed by rules; numbers, citations and tone fact-checked; template fallback",violet,,,,
+7 Feature to AI to Guardrails,Table row,F2 Owners like me,From: O2 | AI capability: retrieval (keyword + situation similarity) + LLM summary | Inputs: reviews for this product | Output: 2-4 most relevant reviews and a cited summary | Guardrails: reviews treated as data; injection and hype ignored; only shown review ids may be cited,violet,,,,
+7 Feature to AI to Guardrails,Table row,F3 Ask about my situation,"From: O4 | AI capability: grounded Q&A | Inputs: question + same facts | Output: short cited answer or 'the listing doesn't say' | Guardrails: scope gate before any model call (safety, actions, privacy, off-topic); output fact check",violet,,,,
+7 Feature to AI to Guardrails,Table row,F4 Fit-safe alternatives,From: O5 | AI capability: none (rules re-run on the same answers) | Output: up to 3 same-category products that pass | Guardrails: never sponsored; never outside the category,violet,,,,
+7 Feature to AI to Guardrails,Table row,Next (post-MVP),"From: O7, O8, O14 | Install-readiness checklist, learning new rules from return reasons, Hindi and voice input",violet,,,,
+8 Guardrails & risks,Sticky,Global guardrail,"Rules decide, AI explains: the model can never change a verdict.",orange,,,,
+8 Guardrails & risks,Sticky,Global guardrail,"Grounded only: every claim cites a check, spec or review; every number must exist in the facts.",orange,,,,
+8 Guardrails & risks,Sticky,Global guardrail,Honest gaps: missing input gives 'Need more info'; missing data gives 'the listing doesn't say'.,orange,,,,
+8 Guardrails & risks,Sticky,Global guardrail,"No pressure: no urgency, guarantees or 'buy now', and no sponsored alternatives.",orange,,,,
+8 Guardrails & risks,Sticky,Global guardrail,Least data: answers stay in the browser; reviewers' identities never shown.,orange,,,,
+8 Guardrails & risks,Sticky,Global guardrail,"Fail safe: if the model is down or fails the fact check, show the rule-based summary.",orange,,,,
+8 Guardrails & risks,Sticky,Risk: A wrong rule says 'Works' and the shopper still returns it,"Mitigation: Conservative thresholds, caveat band, labelled eval set, track mismatch returns per rule",orange,,,,
+8 Guardrails & risks,Sticky,Risk: Wrong or missing spec on the listing,Mitigation: Show which spec each check used; 'Need info' when missing; seller missing-spec alerts (O6),orange,,,,
+8 Guardrails & risks,Sticky,Risk: Model invents a number or contradicts the verdict,Mitigation: Output fact check + one retry + template fallback; 100% gate in evals,orange,,,,
+8 Guardrails & risks,Sticky,Risk: Fake or injected reviews steer the answer,"Mitigation: Reviews are data, verdict ignores them; planted injection review in the eval set",orange,,,,
+8 Guardrails & risks,Sticky,Risk: Conversion drops because shoppers see 'won't work',Mitigation: Show fit-safe alternatives; guardrail metric on conversion and add-to-cart in the A/B test,orange,,,,
+9 Hand-off,Sticky,Step 3 PRD,"Step 3 PRD: North Star = confident purchases (orders not returned for a mismatch reason within 30 days). MVP = F1-F4 for three categories (ACs, chargers, shoe racks). A/B test vs control: primary mismatch-return rate; guardrails conversion and add-to-cart.",yellow,,,,

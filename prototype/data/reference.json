@@ -1,0 +1,55 @@
+{
+  "_note": "SYNTHETIC reference data for the BuyRight course prototype. City peak temperatures are rounded illustrative values. Phone models and brands are fictional. Rules are simplified rules of thumb, documented in the README.",
+  "as_of": "2026-11-08",
+  "ac_rules": {
+    "sqft_per_ton": 130,
+    "sun_load": 0.15,
+    "hot_city_load": 0.10,
+    "per_extra_person": 0.05,
+    "fail_below": 0.9,
+    "oversize_above": 1.6,
+    "stabilizer_free_below_v": 160
+  },
+  "charger_rules": {
+    "basic_watts": 10,
+    "full_speed_share": 0.9,
+    "partial_share": 0.5,
+    "laptop_slow_share": 0.7,
+    "powerbank_efficiency": 0.65
+  },
+  "rack_rules": {
+    "shoe_outsole_extra_cm": 1,
+    "tight_margin_cm": 2,
+    "pairs_warn_share": 1.15,
+    "open_overhang_cm": 4
+  },
+  "cities": [
+    { "name": "Delhi", "peak_c": 46, "climate": "hot", "tier": 1 },
+    { "name": "Jaipur", "peak_c": 46, "climate": "hot", "tier": 2 },
+    { "name": "Nagpur", "peak_c": 47, "climate": "hot", "tier": 2 },
+    { "name": "Lucknow", "peak_c": 45, "climate": "hot", "tier": 2 },
+    { "name": "Ahmedabad", "peak_c": 45, "climate": "hot", "tier": 1 },
+    { "name": "Patna", "peak_c": 43, "climate": "hot", "tier": 2 },
+    { "name": "Bhubaneswar", "peak_c": 44, "climate": "hot", "tier": 2 },
+    { "name": "Indore", "peak_c": 43, "climate": "moderate", "tier": 2 },
+    { "name": "Hyderabad", "peak_c": 43, "climate": "moderate", "tier": 1 },
+    { "name": "Pune", "peak_c": 40, "climate": "moderate", "tier": 1 },
+    { "name": "Bengaluru", "peak_c": 36, "climate": "moderate", "tier": 1 },
+    { "name": "Coimbatore", "peak_c": 38, "climate": "moderate", "tier": 2 },
+    { "name": "Mumbai", "peak_c": 37, "climate": "humid", "tier": 1 },
+    { "name": "Chennai", "peak_c": 41, "climate": "humid", "tier": 1 },
+    { "name": "Kolkata", "peak_c": 40, "climate": "humid", "tier": 1 },
+    { "name": "Surat", "peak_c": 42, "climate": "humid", "tier": 2 },
+    { "name": "Kochi", "peak_c": 35, "climate": "humid", "tier": 2 }
+  ],
+  "phones": [
+    { "id": "aster-15", "name": "Aster 15", "port": "usb-c", "battery_mah": 3350, "charging": { "pd": 20 } },
+    { "id": "aster-11", "name": "Aster 11", "port": "lightning", "battery_mah": 3110, "charging": { "pd": 20 } },
+    { "id": "orbit-s24", "name": "Orbit S24", "port": "usb-c", "battery_mah": 4000, "charging": { "pd": 15, "pps": 25 } },
+    { "id": "orbit-s24-ultra", "name": "Orbit S24 Ultra", "port": "usb-c", "battery_mah": 5000, "charging": { "pd": 15, "pps": 45 } },
+    { "id": "pico-8", "name": "Pico 8", "port": "usb-c", "battery_mah": 4575, "charging": { "pd": 27, "pps": 27 } },
+    { "id": "zen-12", "name": "Zen 12", "port": "usb-c", "battery_mah": 5400, "charging": { "pd": 30, "qc": 18, "proprietary": { "name": "ZenDash", "w": 80 } } },
+    { "id": "rhea-note-13-pro", "name": "Rhea Note 13 Pro+", "port": "usb-c", "battery_mah": 5000, "charging": { "pd": 18, "qc": 27, "proprietary": { "name": "HyperFlash", "w": 120 } } },
+    { "id": "rhea-12", "name": "Rhea 12", "port": "usb-c", "battery_mah": 5000, "charging": { "qc": 18 } }
+  ]
+}
